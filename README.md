@@ -1,20 +1,20 @@
 # Portfolio Tracker Application
 Portfolio Tracker app allows a user to track their shareholdings performance and total portfolio value in real-time. The "Discover" page allows you to select a number of stocks provided by the external API, real-time data comes from the NASDAQ stock exchange. User is able to compare different stocks, add them to their portfolio and track the total portfolio value in real-time which is displayed on "My Portfolio" page.
 
-This is a group project, a full-stack web app using JavaScript and React front-end, Express server, and MongoDB database back-end.
+This is a solo project, a full-stack web app using JavaScript and React front-end, Express server, and MongoDB database back-end.
 
 
-### Portfolio Tracker Application Demo
-![](screenshots/portfolio_tracker.gif)
+### Portfolio Tracker Application 
+![](screenshots/Portfolio_1.png)
 
 ### Discover page - view and search any available stock with real-time prices
 ![](screenshots/discover.png)
 
 ### View selected stock, read company description, view historical price performance
-![](screenshots/card.png)
+![](screenshots/stock_info.png)
 
-### My Portfolio page
-![](screenshots/portfolio.png)
+### View selected stock charts
+![](screenshots/stock_chart.png)
 
 
 ## Project brief
