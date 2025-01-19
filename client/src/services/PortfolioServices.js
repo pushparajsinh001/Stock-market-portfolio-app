@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:5000/api/shares/';
+const baseURL = process.env.baseURL;
 
 export const getHeldShares = async () => {
   try {
