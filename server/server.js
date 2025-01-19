@@ -1,20 +1,27 @@
 const express = require('express');
 const app = express();
-const MongoClient = require('mongodb').MongoClient;
+const { MongoClient } = require('mongodb'); 
 const createRouter = require('./helpers/create_router');
 const cors = require('cors');
 
 app.use(cors());
 app.use(express.json());
 
-MongoClient.connect('mongodb://127.0.0.1:27017/mydatabase', { useNewUrlParser: true, useUnifiedTopology: true }).then((client) => {
-    const db = client.db('portfolio');
+// MongoDB Atlas Connection String
+const uri = "mongodb+srv://savage:savage@pushparajsinh001.bbqyp.mongodb.net/"; 
+
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+client.connect()
+  .then(async () => {
+    console.log('Connected to MongoDB Atlas');
+    const db = client.db('portfolio'); // Use the same database name
     const sharesCollection = db.collection('shares');
     const sharesRouter = createRouter(sharesCollection);
     app.use('/api/shares', sharesRouter);
-})
-.catch(console.error)
+  })
+  .catch(err => console.error('Could not connect to MongoDB Atlas:', err));
 
 app.listen(5000, function(){
-    console.log(`Listening on port ${ this.address().port }`);
+  console.log(`Listening on port ${ this.address().port }`);
 });
