@@ -8,7 +8,8 @@
     "start": "node server.js",
     "build": "npm run build",
     "server:dev": "nodemon server.js",
-    "seeds": "mongosh < db/seeds.js"
+    "seeds": "mongosh < db/seeds.js",
+    "deploy": "npm install dotenv && npm run build"
   },
   "keywords": [],
   "author": "",
