@@ -10,6 +10,7 @@
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.7.2",
     "caniuse-lite": "^1.0.30001690",
+    "dotenv": "^16.4.7",
     "highcharts": "^9.3.2",
     "highcharts-react-official": "^3.1.0",
     "react": "^17.0.2",
