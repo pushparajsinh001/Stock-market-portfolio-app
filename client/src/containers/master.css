@@ -1,7 +1,18 @@
-.sidebar-content-container{
+.sidebar-content-container {
     display: flex;
 }
 
-.main{
+.main {
     flex: 5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sidebar-content-container {
+        flex-direction: column; /* Stack sidebar and main content on smaller screens */
+    }
+
+    .main {
+        flex: 1; /* Adjust flex property for smaller screens */
+    }
 }

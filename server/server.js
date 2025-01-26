@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '../.env' });
+require('dotenv').config();
 const express = require('express');
 const { MongoClient } = require('mongodb');
 const createRouter = require('./helpers/create_router');

@@ -1,6 +1,12 @@
-
-.portfoliocontainer{
+.portfoliocontainer {
     flex: 5;
     padding: 20px;
-    
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .portfoliocontainer {
+        flex: 1; /* Adjust flex property for smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
 }

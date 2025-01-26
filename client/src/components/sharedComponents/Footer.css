@@ -1,14 +1,26 @@
-.footer{
+.footer {
     width: 100%;
     height: 50px;
     background-color: rgb(231, 191, 236);
     position: relative;
     bottom: 0;
     z-index: 999;
-    
 }
 
-.contributers{
+.contributers {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    .contributers {
+        flex-direction: column; /* Stack contributors vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
 }
