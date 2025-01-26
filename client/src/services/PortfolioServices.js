@@ -1,5 +1,4 @@
-// const baseURL = process.env.baseURL || ;
-// const baseURL = "mongodb+srv://savage:savage@pushparajsinh001.bbqyp.mongodb.net/portfolio?retryWrites=true&w=majority";
+
 const baseURL = "https://stock-market-portfolio-app-uwx4.onrender.com/api/shares"; // Replace with your backend's base URL
 
 export const getHeldShares = async () => {
