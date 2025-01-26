@@ -1,4 +1,4 @@
-# Portfolio Tracker Application
+it# Portfolio Tracker Application
 Portfolio Tracker app allows a user to track their shareholdings performance and total portfolio value in real-time. The "Discover" page allows you to select a number of stocks provided by the external API, real-time data comes from the NASDAQ stock exchange. User is able to compare different stocks, add them to their portfolio and track the total portfolio value in real-time which is displayed on "My Portfolio" page.
 
 This is a solo project, a full-stack web app using JavaScript and React front-end, Express server, and MongoDB database back-end.
@@ -63,6 +63,7 @@ The application is using Financial Modeling Prep API as a source of stock data: 
 |                    | `node server.js` |
 
 To run this application locally, sign-up to get a free API key kere: https://financialmodelingprep.com/. Then inside ``` client/src/services ``` folder create a new file ```apikey.js```. Inside this file insert the line from bellow adding your API key where indicated:
+(if the file is already present use your own api key !)
 
 ```
 export const apikey = "API_key_here"
